@@ -217,7 +217,7 @@ def detect_mobile(view):
         Middleware.process_request(request)
         return view(request, *args, **kwargs)
 
-    detected.__doc__ = view.__doc__ + "\n"
+    detected.__doc__ = view.getattr('__doc__', '') + "\n"
     detected.__doc__ += "[Wrapped by detect_mobile which detects if the"
     detected.__doc__ += " request is from a phone]"
 
