@@ -17,7 +17,7 @@ symbian
 nokia
 samsung
 windows ce
-windows phone os 7
+windows phone
 iemobile
 epoc
 opera mini

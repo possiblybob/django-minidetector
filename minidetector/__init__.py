@@ -97,6 +97,10 @@ class Middleware(object):
                     found_device = "winphone7"
                     device[found_device] = found_device
 
+                elif (s.find("windows phone 8") > -1):
+                    found_device = "winphone8"
+                    device[found_device] = found_device
+
                 elif s.find("nokia") > -1:
                     found_device = "nokia"
                     try:
